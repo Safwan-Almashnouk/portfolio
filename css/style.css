@@ -1,7 +1,9 @@
 html, body{
   background-color: #111214;
 }
-
+.logo img {
+  height: 50px; /* Adjust as needed */
+}
 
 .Name{
   display: flex;
