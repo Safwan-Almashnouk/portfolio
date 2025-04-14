@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Artis/Project.css">
+    <script defer src="js\swap.js"></script>
+    <title>Elden Bling</title>
+</head>
+<div class="header" id="myHeader">
+              
+    <div class="Buttons">
+        <a href="index.html" style="display: block; width: 100%; text-decoration: none;">
+          <button type="button"style="width: 100%;">Home</button>
+      </a>
+        <a href="aboutMe.html" style="display: block; width: 100%; text-decoration: none;">
+          <button type="button" style="width: 100%;">About Me</button>
+        </a>
+        <div class="dropdown">
+          <button class="dropbtn">Projects
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Artis.html">Artis Space Show</a>
+            <a href="Forsaken.html">Forsaken Kingdoms</a>
+            <a href="Witch&Knight.html">Witch&Knight</a>
+            <a href="Elden.html">Elden Bling</a>
+            <a href="Rift.html">Rift Guardian</a>
+            <a href="">Galactic Chase</a>
+          </div>
+        </div>
+        <a href="Contact.html" style="display: block; width: 100%; text-decoration: none;">
+            <button type="button" style="width: 100%;"> Contact</button>
+          </a>
+      </div>
+</div>
+<body>
+    
+    <article>
+        <header>
+       
+            <h1>
+                <div class="Title">Elden Bling.</div>
+            </h1>
+            <div class="Intro">
+                <div class="ProjectTags">
+                  <div class="Tag"><b>Year- </b>2024</div>
+                  <div class="Tag"><b>Length- </b>8 weeks</div>
+                  <div class="Tag"><b>Engine- </b>Unity</div>
+                  <div class="Tag"><b>Language- </b>C#</div> 
+                  <div class="Tag"><b>Workflow- </b>Scrum agile </div>
+                  <div class="Tag"><b>Team Size- </b>3 developers, 5 artists</div>
+                  <div class="Tag"><b>Role- </b>Lead Developer</div>
+                </div>
+              
+                <div class="IntroTextWrapper">
+                  <div class="IntroTitle">
+                    <h1>Introduction</h1>
+                  </div>
+                  <div class="IntroductionText">
+                    <p>
+                        We were presented with around 20 games, each accompanied by a 10-second clip, and tasked with selecting which vertical slice to create. As a passionate Soulsborne fan, I immediately gravitated toward the Elden Ring option and made my choice. 
+                    </p>
+                  </div>
+                </div>
+                
+            </div>
+            
+              
+        </header>
+    </article>
+
+    <div class="ProjectLinks">
+        <a href="https://github.com/Safwan-Almashnouk/Elden-Bling"> Git Link</a>
+    </div>
+    <hr class="solid">
+    <div class="Table">
+        <div class="Toc">
+            <h1>
+                Table of content
+            </h1>
+        </div>
+      
+        <div class="Content">
+            <a href="#div_id1">My contribution </a>
+            <a href="#div_id2">Combo system</a>
+            <a href="#div_id3">Hit Detection</a>
+            <a href="#div_id4">Reflection</a>
+            <hr class="solid">
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="Contribution">
+        <div class="ContributionTitle">
+            <div id="div_id1"></div>
+            <h1>My Contribution</h1>
+            
+            <div class="MyContribution">
+                <div id="div_id1"></div>
+                <p>
+                    Being the only one with 350+ hours on Elden Ring, I led the team and managed the game feel. I took screenshots of the section the artists had to remake, recorded some videos walking around, and captured all the attack animations. After that, I began working on the combo system.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="SectionTitle">
+            <hr class="solid">
+            <div id="div_id2"></div>
+            <h1>
+                Combo System
+            </h1>
+        </div>
+        <div class="SectionImage">
+            <img src="Elden/combo.gif" alt="" srcset="">
+        </div>
+        <div class="Paragraph">
+            <p>
+                On the surface, the combat seemed rather simple, but in reality, it was a bit more complex. For starters, each button press — "E" for a light attack and "Q" for a heavy attack — triggers an animation. If the button is pressed again during the last half of the animation, the press is registered for a follow-up attack. This process continues through the second animation, but the third attack no longer registers additional presses.
+            </p>
+        </div>
+        <div class="SectionImage">
+            <img src="Elden/comboSheet.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="Section">
+        <div class="SectionTitle">
+            <hr class="solid">
+            <div id="div_id3"></div>
+            <h1>
+                Hit Detection
+            </h1>
+        </div>
+        <div class="SectionImage">
+            <img src="Elden/ATTACK.gif" alt="" srcset="">
+        </div>
+        <div class="Paragraph">
+            <p>
+                The first setback I faced wjem creating the combat system was that each frame with the sword in the enemy would damage it. 
+            </p>
+            <p>
+                What I decided to do was create a list in the sword which would add the hitbox of an enemy into a list, after that, every frame of the collision, it would check if that hitbox was in the list. If it were, it would ignore it. At the end of the attack animation, the list is then cleared. 
+            </p>
+        </div>
+        
+        <div class="SectionImage">
+            <img src="Elden/Screenshot 2025-04-11 130841.png" alt="" srcset="">
+        </div>
+        
+    </div>
+
+    <div class="Section">
+        <div class="SectionTitle">
+            <hr class="solid">
+            <div id="div_id4"></div>
+            <h1>
+                Retrospective
+            </h1>
+        </div>
+
+        <div class="Paragraph">
+            <p>
+                Being lead developer was certinally fun, and I enjoyed it plenty. There are some things that I should have done diffrent, such as following strict code coventions and ensuring that my code remains clean, dry, and srp. It was something I did not try my hardest to do here, and I do regret that. 
+            </p>
+        </div>
+        <hr class="solid">
+    </div>
