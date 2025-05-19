@@ -116,6 +116,7 @@
   .SlideShowTitle h1{
    color: #acafc8;
     font-family: "Fleshandblood" ;
+    font-size: 50px;
   }
 
   .SlideShowTagHolder{
@@ -382,7 +383,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: hsla(0, 0%, 31%, 0.237);
+    background-color: hsla(240, 58%, 23%, 0.719);
     border-radius: 5px;
   }
 
